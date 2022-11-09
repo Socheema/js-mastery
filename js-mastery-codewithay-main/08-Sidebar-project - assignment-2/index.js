@@ -1,14 +1,10 @@
-'use strict'
-
-let displayToggler = document.querySelector('.fa-bars')
-let sidebar = document.querySelector('.sidebar')
-let sidebarRemover = document.querySelector('.fa-times')
-
-
-displayToggler.addEventListener('click', function() {
-    sidebar.classList.toggle('show-sidebar')
+"use strict";
+const navbar = document.querySelector(".fa-bars");
+const side = document.querySelector(".sidebar");
+const closeSidebar = document.querySelector(".fa-times");
+navbar.addEventListener("click", function(){
+    side.classList.toggle("show-sidebar")
 })
-
-sidebarRemover.addEventListener('click', function() {
-    sidebar.classList.toggle('show-sidebar')
+closeSidebar.addEventListener("click", function(){
+    side.classList.remove("show-sidebar")
 })
